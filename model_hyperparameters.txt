@@ -1,0 +1,87 @@
+We have used 6 models:
+i) Support Vector Classifier (SVC)
+ii) Multinomial Naive Bayes Classifier (MNB)
+iii) XGBoost
+iv) Feed-Forward Neural Network (FNN)
+v) Universal Sentence Encoder + BiLSTM (USE)
+vi) BERT + BiLSTM (BERT)
+
+
+We have split the Review Dataset into train(baseline) and test ratio of 0.8:0.2, which can be seen in the variable
+  split ratio = 0.2
+this value can be changed in the "#INITIALISATION" section of the notebook
+
+
+Following are the hyperparameter details and pipeline for each model:
+  we have used the following hyperparameters:
+    i) gamma(g) - for SVM
+    ii) alpha(a) - for MNB
+    iii) epochs -         }
+    iv) verbose -         }  for all Deep Learning (FNN, USE, BERT) Models
+    v) batch size -       }
+    vi) learning_rate -   }
+
+these hyperparameters can be found in the "#hyperparameters" part of the model code for each model in the CN_baseline.ipynb notebook
+and their values can be adjusted(tuned) for any specific model as per requirement, for obtaining best results for a given dataset.
+
+SVC:
+  embedding - tfidf
+  embedding features = 3003
+  input matrix dimension - (_, 3019)
+  kernel = linear
+  gamma = 2
+
+Multinomial Naive Bayes Classifier:
+  embedding - tfidf
+  embedding features = 3003
+  input matrix dimension - (_, 3019)
+  alpha = 0.29
+
+XGBoost:
+  embedding - tfidf
+  embedding features = 3000
+  input matrix dimension - (_, 3016)
+
+
+FNN (128, 32):
+  embedding - tfidf
+  embedding features = 2500
+  input matrix dimension - (_, 2516)
+  epochs = 5
+  verbose = 1
+  batch size = 15
+  learning_rate = 0.001
+  neural network layers -
+    i) dense layer, 24 units, ‘relu’ activation (input layer)
+    ii) dense layer, 20 units, ‘relu’ activation
+    iii) dense layer, 1 unit, ‘sigmoid’ activation (output layer)
+
+USE:
+  embedding - universal-sentence-encoder/4
+  embedding features = 512
+  input matrix dimension - (_, 1, 528)
+  epochs = 5
+  verbose = 1
+  batch size = 15
+  learning rate = 0.001
+  dropout rate = 0.2
+  neural network layers -
+    i) biLSTM layer, 32 units (input layer)
+    ii) dense layer, 24 units, ‘relu’ activation
+    iii) dense layer, 1 unit, ‘sigmoid’ activation (output layer)
+
+BERT:
+  embedding - bert-base-uncased
+  embedding features = (12, 768)
+  input matrix dimension - (_, 12, 784)
+  epochs = 5
+  verbose = 1
+  batch size = 15
+  learning rate = 0.001
+  dropout rate = 0.2
+  neural network layers -
+    i) biLSTM layer, 32 units (input layer)
+    ii) dense layer, 24 units, ‘relu’ activation
+    iii) dense layer, 24 units, ‘relu’ activation
+    iv) dense layer, 24 units, ‘relu’ activation
+    v) dense layer, 1 unit, ‘sigmoid’ activation (output layer)
