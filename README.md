@@ -1,7 +1,9 @@
-# C_N_reviews
-This repository contains the code and graphs of the "Constructive and Non-constructive Reviews" research paper<br />
-Authors: Prabhat Kumar Bharti, Priyanshu Patra<br />
-Affiliation: Indian Institute of Technology (IIT) Patna, India<br />
+# ReConstr
+This repository contains the code and graphs of the "ReConstr:Please be Polite on your Peers Towards Estimating Constructiveness of Reviewer’s Comment in Peer Review<br />
+Authors: Prabhat Kumar Bharti, Tirthankar Ghoshal, Mayank Agrawal, Asif Ekbal<br />
+Affiliation: Indian Institute of Technology, Patna, India India<br />
+
+
 
 ------
 
