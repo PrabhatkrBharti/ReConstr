@@ -28,7 +28,7 @@ SVC:
   embedding - tfidf
   embedding features = 3003
   input matrix dimension - (_, 3019)
-  kernel = linear
+  kernel = sigmoid kernal
   gamma = 2
 
 Multinomial Naive Bayes Classifier:
