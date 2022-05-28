@@ -21,7 +21,7 @@ Following are the hyperparameter details and pipeline for each model:
     v) batch size -       }
     vi) learning_rate -   }
 
-these hyperparameters can be found in the "#hyperparameters" part of the model code for each model in the CN_baseline.ipynb notebook
+these hyperparameters can be found in the "#hyperparameters" part of the model code for each model in the baseline.ipynb notebook
 and their values can be adjusted(tuned) for any specific model as per requirement, for obtaining best results for a given dataset.
 
 SVC:
