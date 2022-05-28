@@ -1,5 +1,5 @@
 # ReConstr
-This repository contains dataset and code of the "ReConstr:Please be Polite on your Peers Towards Estimating Constructiveness of Reviewer’s Comment in Peer Review<br />
+This repository contains dataset and code of the "Please be Polite on Your Peers: Estimating Constructiveness of Peer Review Comments"<br />
 Authors: Prabhat Kumar Bharti, Tirthankar Ghoshal, Mayank Agrawal, Asif Ekbal<br />
 Affiliation: Indian Institute of Technology, Patna, India<br />
 
