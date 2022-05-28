@@ -24,6 +24,8 @@ Affiliation: Indian Institute of Technology, Patna, India<br />
 - **[model prediction notebook](https://github.com/ReConstr/C_N_reviews/blob/main/CN_baseline.ipynb) :**<br />
   - model prediction notebook contains the codes with detailed guiding comments, that create each of the six models we have used, prepare the embedding and labels matrix from the features for training and testing, train the models, and then show the results of the training on the testing dataset (baseline) as well as the ICLR dataset (qualitative analysis).
 
+## Dataset
+[Review Dataset](https://github.com/pripat-2002/C_N_reviews/blob/main/datasets/Final_review_dataset.csv) is a comma-separated csv file containing 1496 peer reviews collected from different conferences, with human annotations to two types of labels: Constructive(C) and Non-constructive(N). The dataset has 749 Constructive reviews and 747 Non-constructive reviews, with 880 reviews from shitmyreviewerssay website, 412 constructive reviews from ICLR, and 204 non-constructive reviews from other sites.
 ------
 
 ### Models we use for experiments:
