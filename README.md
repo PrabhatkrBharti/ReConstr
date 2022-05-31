@@ -22,7 +22,7 @@ Affiliation: Indian Institute of Technology, Patna, India<br />
   - feature analysis notebook contains the codes that provide a detailed analysis of the 16 features (other than word embeddings) that we have used for creating the models. This can give us a basic idea how the features such as review length, linguistic features, sentiment and harshness of reviews varies for constructive (C) and non-constructive (N) reviews.<br />
 - **[model prediction notebook](https://github.com/PrabhatkrBharti/ReConstr/blob/main/Baseline.ipynb) :**<br />
   - model prediction notebook contains the codes with detailed guiding comments, that create each of the six models we have used, prepare the embedding and labels matrix from the features for training and testing, train the models, and then show the results of the training on the testing dataset (baseline) as well as the ICLR dataset (qualitative analysis).
-  - **[interannotation agreement notebook](https://github.com/PrabhatkrBharti/ReConstr/blob/main/interannotation_agreement.ipynb) :**<br />
+  - **[interannotation agreement notebook](https://github.com/PrabhatkrBharti/ReConstr/blob/main/interannotator_agreement.ipynb) :**<br />
   - interannotation agreement notebook contains the codes with detailed guiding comments, for interannotation agreement between annotator.
 
 ## Dataset
